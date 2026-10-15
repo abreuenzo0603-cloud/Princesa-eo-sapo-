@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Princesa e o Sapo — Portfólio Fotográfico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f3e8;--bg2:#eef0e2;--ink:#24352c;--mut:#5b6b60;--sage:#9caf88;--em:#1f6b4f;--gold:#b89a55;--card:#fffdf6;--line:rgba(36,53,44,.14);--shadow:0 14px 40px rgba(31,107,79,.14);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101c16;--bg2:#15251d;--ink:#f1ecdc;--mut:#a9b8ab;--sage:#7f9a6f;--em:#4fb58c;--gold:#d3b673;--card:#192b22;--line:rgba(241,236,220,.15);--shadow:0 14px 40px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#101c16;--bg2:#15251d;--ink:#f1ecdc;--mut:#a9b8ab;--sage:#7f9a6f;--em:#4fb58c;--gold:#d3b673;--card:#192b22;--line:rgba(241,236,220,.15);--shadow:0 14px 40px rgba(0,0,0,.4)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.7 'Jost',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:'Cormorant Garden','Cormorant Garamond',Georgia,serif;font-weight:300;margin:0}
+a{color:inherit}
+header{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) 5vw 12px;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-size:1.45rem;text-decoration:none;display:flex;align-items:center;gap:8px;letter-spacing:.02em}
+.logo svg{width:28px;height:28px}
+nav{display:flex;gap:22px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--mut);transition:color .3s}nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:20px;padding:6px 14px;font:inherit;font-size:.8rem}
+section{padding:96px 6vw;max-width:1180px;margin:auto}
+.eyebrow{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+h2{font-size:clamp(2rem,5vw,3rem);margin:6px 0 10px;font-style:italic}
+.lead{color:var(--mut);max-width:560px}
+.divider{display:flex;align-items:center;gap:14px;margin:18px 0 34px;color:var(--gold)}
+.divider:before,.divider:after{content:"";height:1px;width:60px;background:var(--gold);opacity:.5}
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 6vw 70px;max-width:none;overflow:hidden;background:radial-gradient(ellipse at 50% 20%,color-mix(in srgb,var(--sage) 40%,transparent),transparent 65%),linear-gradient(180deg,var(--bg2),var(--bg))}
+.hero h1{font-size:clamp(3rem,10vw,6.6rem);line-height:1.02;font-weight:300}
+.hero h1 em{color:var(--em);font-style:italic}
+.hero .amp{color:var(--gold);font-style:italic}
+.slogan{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,3vw,1.7rem);color:var(--mut);margin:18px 0 34px}
+.btn{display:inline-block;padding:13px 32px;border:1px solid var(--gold);border-radius:40px;text-decoration:none;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;transition:.35s;background:transparent;color:var(--ink);cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--gold);color:#fff}
+.pond{position:absolute;left:0;right:0;bottom:0;height:140px;pointer-events:none}
+.fly{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px 4px color-mix(in srgb,var(--gold) 55%,transparent);animation:float 9s ease-in-out infinite;opacity:.0}
+@keyframes float{0%,100%{transform:translate(0,0);opacity:0}20%,80%{opacity:.9}50%{transform:translate(24px,-40px)}}
+.leaf{position:absolute;width:150px;opacity:.5;color:var(--sage)}
+/* galeria */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.filters button{background:none;border:1px solid var(--line);color:var(--mut);padding:8px 20px;border-radius:30px;font:inherit;font-size:.82rem;letter-spacing:.1em;cursor:pointer;transition:.3s}
+.filters button.on,.filters button:hover{background:var(--em);color:#fff;border-color:var(--em)}
+.grid{columns:3 240px;column-gap:18px}
+.ph{break-inside:avoid;margin:0 0 18px;position:relative;border-radius:6px;overflow:hidden;cursor:zoom-in;box-shadow:var(--shadow);transition:transform .5s,opacity .4s}
+.ph:hover{transform:translateY(-4px)}
+.ph .art{display:block;width:100%}
+.ph figcaption{position:absolute;inset:auto 0 0;padding:34px 16px 14px;color:#fffdf6;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem;background:linear-gradient(transparent,rgba(16,28,22,.75));opacity:0;transition:opacity .4s}
+.ph:hover figcaption,.ph:focus-visible figcaption{opacity:1}
+.ph.hide{display:none}
+.note{font-size:.85rem;color:var(--mut);margin-top:10px;font-style:italic}
+/* coleções */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.col{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);transition:transform .4s}
+.col:hover{transform:translateY(-5px)}
+.col .art{height:200px;width:100%;display:block}
+.col div{padding:20px 22px 24px}
+.col h3{font-size:1.65rem;font-style:italic}
+.col p{margin:6px 0 0;color:var(--mut);font-size:.95rem}
+.col small{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.7rem}
+/* sobre */
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:200px 200px 8px 8px;box-shadow:var(--shadow);position:relative;overflow:hidden;border:1px solid var(--gold)}
+.about p{color:var(--mut)}
+.sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.7rem;color:var(--em)}
+/* contato */
+.contact{background:var(--bg2);max-width:none}
+.contact .in{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:50px}
+form{display:grid;gap:14px}
+input,textarea,select{width:100%;padding:13px 16px;background:var(--card);border:1px solid var(--line);border-radius:6px;color:var(--ink);font:inherit}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--gold);outline-offset:1px}
+.links a{display:block;text-decoration:none;padding:7px 0;border-bottom:1px solid var(--line);color:var(--mut)}
+.links a:hover{color:var(--gold)}
+footer{text-align:center;padding:40px 6vw;color:var(--mut);font-size:.85rem}
+footer .frog{width:34px;margin-bottom:6px}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,20,15,.93);display:none;align-items:center;justify-content:center;flex-direction:column;padding:20px}
+.lb.open{display:flex;animation:fade .3s}
+@keyframes fade{from{opacity:0}}
+.lb .frame{width:min(88vw,720px);max-height:72vh;border-radius:6px;overflow:hidden;border:1px solid var(--gold);display:flex}
+.lb .frame svg{width:100%;height:auto;max-height:72vh}
+.lb p{color:#f1ecdc;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;margin:14px 0 0;text-align:center}
+.lb button{position:absolute;background:none;border:1px solid rgba(241,236,220,.3);color:#f1ecdc;width:46px;height:46px;border-radius:50%;font-size:1.3rem;cursor:pointer}
+.lb .x{top:calc(18px + env(safe-area-inset-top,0px));right:18px}.lb .pv{left:14px;top:50%}.lb .nx{right:14px;top:50%}
+.lb .frame img{width:100%;max-height:72vh;object-fit:contain;background:#0a140f}.lb .rm{top:calc(18px + env(safe-area-inset-top,0px));left:18px;width:auto;height:38px;border-radius:30px;padding:0 16px;font-size:.8rem;display:none}
+.rv{opacity:0;transform:translateY(22px);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+@media (max-width:760px){
+ nav{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);padding:6px 6vw 14px;display:none;border-bottom:1px solid var(--line)}
+ nav.open{display:flex}nav a{padding:12px 0}.menu{display:block}
+ .about,.contact .in{grid-template-columns:1fr}.portrait{max-width:280px;margin:auto}
+ section{padding:72px 6vw}.lb .pv,.lb .nx{top:auto;bottom:24px}.ph figcaption{opacity:1}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="frog" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="20" r="8"/><circle cx="44" cy="20" r="8"/><path d="M12 30c-4 6-2 18 8 22h24c10-4 12-16 8-22-6 4-34 4-40 0z"/><circle cx="20" cy="20" r="1.5" fill="currentColor"/><circle cx="44" cy="20" r="1.5" fill="currentColor"/><path d="M24 40c5 4 11 4 16 0"/></g><path d="M26 7l6-5 6 5-6 3z" fill="#b89a55" stroke="none" transform="translate(0 2)"/></symbol>
+<symbol id="leaf" viewBox="0 0 100 100"><path d="M10 90C10 40 40 10 92 8 90 60 60 90 10 90z" fill="currentColor"/><path d="M12 88C40 60 62 36 88 12" stroke="#f7f3e8" stroke-opacity=".5" fill="none"/></symbol>
+</defs></svg>
+
+<header>
+ <a class="logo" href="#inicio" aria-label="Princesa e o Sapo"><svg style="color:var(--em)"><use href="#frog"/></svg>Princesa e o Sapo</a>
+ <button class="menu" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('open')">Menu</button>
+ <nav onclick="this.classList.remove('open')"><a href="#galeria">Galeria</a><a href="#colecoes">Coleções</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+ <svg class="leaf" style="left:-30px;top:18%;transform:rotate(20deg)"><use href="#leaf"/></svg>
+ <svg class="leaf" style="right:-30px;top:42%;transform:rotate(-140deg);width:120px"><use href="#leaf"/></svg>
+ <div id="flies"></div>
+ <div style="position:relative">
+  <div class="eyebrow">Portfólio fotográfico</div>
+  <h1>Princesa <span class="amp">e o</span> <em>Sapo</em></h1>
+  <p class="slogan">Toda imagem conta um conto.</p>
+  <a class="btn" href="#galeria">Entrar na história</a>
+ </div>
+ <svg class="pond" viewBox="0 0 1200 140" preserveAspectRatio="none"><path d="M0 70c200-40 400 40 600 0s400-40 600 10v60H0z" fill="#1f6b4f" opacity=".16"/><path d="M0 100c250-30 450 30 650 0s350-30 550 0v40H0z" fill="#9caf88" opacity=".3"/><ellipse cx="260" cy="112" rx="42" ry="9" fill="#1f6b4f" opacity=".35"/><ellipse cx="900" cy="104" rx="30" ry="7" fill="#1f6b4f" opacity=".3"/></svg>
+</section>
+
+<section id="galeria">
+ <div class="rv"><div class="eyebrow">Galeria</div><h2>Pequenos contos em luz</h2>
+ <p class="lead">Escolha uma categoria e toque em uma imagem para vê-la em tamanho maior.</p><div class="divider">❦</div>
+ <div class="filters" role="tablist"></div></div>
+ <div class="grid" id="grid"></div>
+ <p class="note" id="note">As ilustrações são espaços reservados: substitua-as pelas suas fotografias.</p>
+ <div id="adm" hidden style="margin-top:26px;padding:18px;border:1px dashed var(--gold);border-radius:8px"><div class="eyebrow">Área da fotógrafa</div><p class="lead" style="margin:6px 0 12px">Escolha a categoria e selecione as fotos. Elas aparecem para todo mundo.</p><div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><select id="ucat" style="width:auto"><option>Natureza</option><option>Retratos</option><option>Flores</option><option>Lagoas</option></select><label class="btn" for="up">＋ Adicionar fotos</label><input id="up" type="file" accept="image/*" multiple hidden></div><p id="st" class="note"></p></div>
+</section>
+
+<section id="colecoes">
+ <div class="rv"><div class="eyebrow">Em destaque</div><h2>Coleções</h2><div class="divider">❦</div></div>
+ <div class="cols rv" id="cols"></div>
+</section>
+
+<section id="sobre">
+ <div class="about rv">
+  <div class="portrait" id="portrait"></div>
+  <div>
+   <div class="eyebrow">Sobre</div><h2>Quem conta os contos</h2>
+   <p>Princesa e o Sapo nasceu de uma ideia simples: toda fotografia guarda um começo, um meio e um “felizes para sempre” que só aparece quando alguém aprende a olhar devagar.</p>
+   <p>Entre lagoas ao amanhecer, flores silvestres e luz dourada de fim de tarde, meu trabalho procura o encantamento escondido no cotidiano — o instante em que o ordinário vira magia, e o sapo, quem sabe, vira príncipe.</p>
+   <span class="sig">— A fotógrafa</span>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contato">
+ <div class="in rv">
+  <div>
+   <div class="eyebrow">Contato</div><h2>Vamos escrever um conto?</h2>
+   <p class="lead">Ensaios, casamentos, retratos e projetos autorais. Conte sua ideia e responderei com carinho.</p>
+   <div class="links" style="margin-top:20px">
+    <a href="mailto:ola@princesaeosapo.com">✉ ola@princesaeosapo.com</a>
+    <a href="#contato">✆ (00) 00000-0000</a>
+    <a href="#contato">❀ @princesaeosapo</a>
+   </div>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Mensagem enviada ✦';">
+   <input required placeholder="Seu nome" aria-label="Seu nome">
+   <input required type="email" placeholder="Seu e-mail" aria-label="Seu e-mail">
+   <select aria-label="Tipo de ensaio"><option>Ensaio</option><option>Casamento</option><option>Retrato</option><option>Outro conto</option></select>
+   <textarea rows="4" required placeholder="Conte-me sua história" aria-label="Mensagem"></textarea>
+   <button class="btn" type="submit">Enviar mensagem</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer><svg class="frog" style="color:var(--em)"><use href="#frog"/></svg><br>© <span id="yr"></span> Princesa e o Sapo · Toda imagem conta um conto.</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+ <button class="x" aria-label="Fechar">✕</button><button class="rm" id="rm">Remover foto</button><button class="pv" aria-label="Anterior">‹</button><button class="nx" aria-label="Próxima">›</button>
+ <div class="frame" id="frame"></div><p id="cap"></p>
+</div>
+
+<script id="data" type="application/json">{"photos":[]}</script>
+<script>
+const SRC='<!DOCTYPE html>\n'+document.documentElement.outerHTML;let D=JSON.parse(document.getElementById('data').textContent),ADM=false;
+const cats=['Todas','Natureza','Retratos','Flores','Lagoas'];
+// cada foto: título, categoria, proporção, cores (céu, meio, base), tipo de motivo
+const P=[
+['Orvalho na Aurora','Natureza',1.25,['#e8efd4','#9caf88','#1f6b4f'],'sun'],
+['A Princesa do Lago','Retratos',.75,['#f4ecd2','#c9d4a8','#2f7a5c'],'face'],
+['Botões de Maio','Flores',1,['#fbf3df','#e8cfa0','#7f9a6f'],'flower'],
+['Espelho d’Água','Lagoas',1.4,['#d9e6d2','#7fa38a','#1b5a43'],'pond'],
+['Clareira Dourada','Natureza',.8,['#f6e8bd','#b8c27c','#2a6a4d'],'sun'],
+['Sob a Vitória-régia','Lagoas',1,['#e4ecd8','#8fb399','#1f6b4f'],'pond'],
+['Coroa de Campo','Retratos',1.2,['#f8efdc','#d8c58a','#6f8f66'],'face'],
+['Margaridas ao Vento','Flores',.85,['#fffaf0','#cfe0b6','#5d8a62'],'flower'],
+['Vaga-lumes','Natureza',1.1,['#26402f','#1f6b4f','#102a1e'],'lights'],
+['Crepúsculo na Lagoa','Lagoas',1.3,['#f2dfae','#9bb38a','#1d5a45'],'pond']
+];
+const PH=P.slice();P.length=0;(D.photos.length?D.photos.map(x=>[x.t,x.c,1,[],'',x.u,x.id]):PH).forEach(x=>P.push(x));if(D.photos.length)document.getElementById('note').style.display='none';
+function art(p,id){if(p[5])return `<img class="art" src="${p[5]}" alt="${p[0]}" loading="lazy">`;
+ const [t,c,r,[a,b,d],k]=p,W=400,H=Math.round(W/r),u='g'+id;
+ let s=`<svg class="art" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${t}"><defs><linearGradient id="${u}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset=".6" stop-color="${b}"/><stop offset="1" stop-color="${d}"/></linearGradient></defs><rect width="${W}" height="${H}" fill="url(#${u})"/>`;
+ const y=H*.62;
+ if(k=='sun')s+=`<circle cx="${W*.7}" cy="${H*.3}" r="${W*.1}" fill="#fff6d8" opacity=".8"/><path d="M0 ${y}q100-50 200 0t200-10V${H}H0z" fill="${d}" opacity=".55"/><path d="M0 ${y+30}q120-40 240 0t160-8V${H}H0z" fill="${d}" opacity=".85"/>`;
+ if(k=='pond')s+=`<path d="M0 ${y}H${W}V${H}H0z" fill="${d}" opacity=".6"/><ellipse cx="${W*.3}" cy="${y+30}" rx="48" ry="9" fill="#9caf88"/><ellipse cx="${W*.68}" cy="${y+60}" rx="34" ry="7" fill="#b8c9a0"/><circle cx="${W*.7}" cy="${y+54}" r="5" fill="#fffdf6"/><path d="M0 ${y}h${W}" stroke="#fff6d8" opacity=".5"/>`;
+ if(k=='flower'){for(let i=0;i<6;i++){const x=40+i*58%330,yy=H*.3+((i*47)%(H*.4));s+=`<g transform="translate(${x} ${yy})"><g fill="#fffdf6" opacity=".92">${[0,72,144,216,288].map(n=>`<ellipse cx="0" cy="-13" rx="7" ry="13" transform="rotate(${n})"/>`).join('')}</g><circle r="6" fill="#d3b673"/></g>`}}
+ if(k=='face')s+=`<ellipse cx="${W/2}" cy="${H*.42}" rx="${W*.17}" ry="${W*.21}" fill="#f2dcc4" opacity=".92"/><path d="M${W*.3} ${H*.34}q${W*.2}-${W*.28} ${W*.4} 0l-4-${W*.1}q-${W*.2}-${W*.1}-${W*.4} 0z" fill="#d3b673"/><path d="M${W*.2} ${H}q${W*.3}-${H*.35} ${W*.6} 0z" fill="#1f6b4f" opacity=".85"/>`;
+ if(k=='lights')for(let i=0;i<16;i++)s+=`<circle cx="${(i*83)%W}" cy="${H*.2+(i*61)%(H*.6)}" r="${2+i%3}" fill="#f0d98a" opacity="${.5+(i%4)*.12}"/>`;
+ return s+'</svg>';
+}
+const grid=document.getElementById('grid'),F=document.querySelector('.filters');
+P.forEach((p,i)=>{const f=document.createElement('figure');f.className='ph rv';f.dataset.c=p[1];f.tabIndex=0;f.innerHTML=art(p,i)+`<figcaption>${p[0]}</figcaption>`;f.onclick=()=>open(i);f.onkeydown=e=>{if(e.key=='Enter')open(i)};grid.appendChild(f)});
+cats.forEach((c,i)=>{const b=document.createElement('button');b.textContent=c;if(!i)b.className='on';b.onclick=()=>{F.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');grid.querySelectorAll('.ph').forEach(f=>f.classList.toggle('hide',c!='Todas'&&f.dataset.c!=c))};F.appendChild(b)});
+const C=[['Lagoas Encantadas',4,'Águas calmas, vitórias-régias e o brilho de um fim de tarde.',3],['Retratos de Conto',3,'Coroas de campo, vestidos de linho e olhares de história.',6],['Jardim em Segredo',2,'Flores miúdas que só aparecem para quem se abaixa para ver.',2]];
+document.getElementById('cols').innerHTML=C.map((c,i)=>`<article class="col">${art(P[c[3]%P.length],'c'+i)}<div><small>Coleção ${['I','II','III'][i]}</small><h3>${c[0]}</h3><p>${c[2]}</p></div></article>`).join('');
+document.getElementById('portrait').innerHTML=art(['','',.8,['#f4ecd2','#c9d4a8','#2f7a5c'],'face'],'pt');
+document.getElementById('yr').textContent=new Date().getFullYear();
+// vaga-lumes
+const fl=document.getElementById('flies');for(let i=0;i<14;i++){const s=document.createElement('i');s.className='fly';s.style.cssText=`left:${Math.random()*96}%;top:${15+Math.random()*60}%;animation-delay:${Math.random()*9}s;animation-duration:${7+Math.random()*6}s`;fl.appendChild(s)}
+// lightbox
+const lb=document.getElementById('lb');let cur=0;
+function vis(){return [...grid.querySelectorAll('.ph:not(.hide)')].map(f=>[...grid.children].indexOf(f))}
+function open(i){cur=i;document.getElementById('frame').innerHTML=art(P[i],'L'+i);document.getElementById('cap').textContent=P[i][0]+' · '+P[i][1];document.getElementById('rm').style.display=(ADM&&P[i][6])?'block':'none';lb.classList.add('open');document.body.style.overflow='hidden'}
+function close(){lb.classList.remove('open');document.body.style.overflow=''}
+function step(d){const v=vis(),n=v[(v.indexOf(cur)+d+v.length)%v.length];open(n)}
+lb.querySelector('.x').onclick=close;lb.querySelector('.pv').onclick=()=>step(-1);lb.querySelector('.nx').onclick=()=>step(1);
+lb.onclick=e=>{if(e.target==lb)close()};
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key=='Escape')close();if(e.key=='ArrowLeft')step(-1);if(e.key=='ArrowRight')step(1)});
+// revelar ao rolar
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+async function shrink(f){const bm=await createImageBitmap(f),k=Math.min(1,1800/Math.max(bm.width,bm.height)),c=document.createElement('canvas');c.width=Math.round(bm.width*k);c.height=Math.round(bm.height*k);c.getContext('2d').drawImage(bm,0,0,c.width,c.height);return new Promise(r=>c.toBlob(r,'image/jpeg',.86))}
+async function save(){const a=await claude.use('artifact');if(!a)return;const html=SRC.replace(/(<script id="data" type="application\/json">)[\s\S]*?(<\/script>)/,(m,x,y)=>x+JSON.stringify(D).replace(/</g,'\\u003c')+y);await a.publish(html)}
+(async()=>{try{const as=await claude.use('assets');if(!as)return;ADM=true;document.getElementById('adm').hidden=false;const inp=document.getElementById('up'),st=document.getElementById('st'),cs=document.getElementById('ucat');
+inp.onchange=async()=>{const fs=[...inp.files];if(!fs.length)return;for(let i=0;i<fs.length;i++){st.textContent='Enviando '+(i+1)+' de '+fs.length+'…';try{const r=await as.upload(await shrink(fs[i]));D.photos.push({id:r.id,u:'/_blob/'+r.id,t:fs[i].name.replace(/\.[^.]+$/,'').replace(/[-_]+/g,' '),c:cs.value})}catch(e){st.textContent='Falha ao enviar: '+(e.message||e.code||'erro');return}}st.textContent='Publicando…';try{await save()}catch(e){st.textContent='Falha ao publicar: '+(e.message||e.code||'erro')}};
+document.getElementById('rm').onclick=async()=>{const p=P[cur];if(!p[6])return;D.photos=D.photos.filter(x=>x.id!==p[6]);st.textContent='Removendo…';try{await save()}catch(e){}}}catch(e){}})();
+</script>
+</body>
+</html>
